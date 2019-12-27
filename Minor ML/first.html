@@ -21,6 +21,7 @@
   <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-base.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
   <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-exports.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
   <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-ui.min.js?hcode=a0c21fc77e1449cc86299c5faa067dc4"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -206,7 +207,8 @@ input[type=text], select {
 function func2() {
 	//alert("Bdfbs");
 	// var element=
-	document.getElementById("container").style.height="500px";
+	document.getElementById("container").style.height="450px";
+	document.getElementById("cont").style.display="block";
 	// console.log(element);
 	// element[0].height ="500px";
 
@@ -522,10 +524,9 @@ document.getElementById("df").disabled=false;
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Company</h1> 
+<div class="jumbotron text-center" style="margin-bottom: 0px;">
+  <h1>College Dhundo</h1> 
   <p>Choose the BEST!</p> 
-<br>
 <br>
 <form class="form-inline">
 	<div class="input-group">
@@ -536,7 +537,7 @@ document.getElementById("df").disabled=false;
     <br>
  <div class="input-group">
 <input type="text" class="fname" name="firstname" placeholder="Enter College" id="tet" style="visibility: hidden;color: black;border-radius: 10px;"> <br><br>
-        <button type="button" id="df" class="btn button button3 btn-danger"  onclick="func2()" style="font-size: 4;">Submit</button>
+        <button type="button" id="df" class="btn button button3 btn-danger"  onclick="func2()" style="font-size: 4;cursor: pointer;">Submit</button>
   </div>
 </div>
 </form>
@@ -552,25 +553,19 @@ document.getElementById("df").disabled=false;
   <button class="btn btn-default btn-lg">Get in Touch</button>
 </div>
 
-<div class="container bg2" >
-<div class =" chart" id="container" style="width: 100%;  fill: red;background-color: transparent;">
-	
+<div class="container bg2" id="cont" style="display: none;">
+	<div class =" chart" id="container" style="width: 100%;  fill: red;background-color: transparent;">	</div>
+
+	<div class="container bg1 text-center" id="another">
+	  <a href="#" class=" btn-lg btn-primary btnall">Shiksha</a>
+	  <a href="#" class=" btn-lg btn-primary btnall">College Dunia</a>
+	  <a href="#" class=" btn-lg btn-primary btnall">Career 360</a>
+	  <a href="#" class=" btn-lg btn-primary btnall">Mouthshut</a>
+
 	</div>
-
 </div>
-
-
-
-
-<div class="container bg1 text-center">
-  <a href="#" class=" btn-lg btn-primary btnall">Shiksha</a>
-  <a href="#" class=" btn-lg btn-primary btnall">College Dunia</a>
-  <a href="#" class=" btn-lg btn-primary btnall">Career 360</a>
-  <a href="#" class=" btn-lg btn-primary btnall">Mouthshut</a>
-
-</div>
-
-<!-- <div class="container bg1">
+<div class="container bg2"></div>
+<!-- <div00 class="container bg1">
 
 </div>
 <div class="container bg1">
@@ -581,19 +576,21 @@ document.getElementById("df").disabled=false;
 </div> -->
 
 
-<footer class="container-fluid text-center" style="padding: 1px;">
-  <div class="container-fluid bg1 row" style="background: transparent;padding: 10px 10px;" >
-    <div class="col-sm-2">
+<footer class="container-fluid text-center" style="padding: 1px; ">
+  <div class="container-fluid bg1 row" style="background: transparent;padding: 10px 10px;margin-bottom: 0px;padding-bottom: 5px; padding-top: 5px;" >
+    <div class="col-sm-3">
       <img id="rcorners3" src="jaypeelogo.jpg"  >
     </div>
     <div class="col-sm-6" style="font-family: 'Thesans';">
       <!-- <h2>Our Values</h2> -->
       <br>
-      <h2  align="left"> Its time to start living the college life you've imagined!</h2>      
+      <h2  align="center"> Its time to start living the college life you've imagined!</h2>      
       <!-- <p><strong>VISION:</strong> Our vision Lorem ipsum..</p> -->
     </div>
-    <div class="col-sm-2">
-    	sdgwnbbgfadb
+    <div class="col-sm-3">
+     	<h2>College Dhundo</h2>
+     	Contact us:<br>
+     	admin@collegedhundo.com
     </div>
   
 </div>
